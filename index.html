@@ -2,126 +2,139 @@
 
 <html lang="en-us">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <title>Trivia Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-     <!-- Script -->
-     <script type="text/javascript" src="assets/javascript/app.js"></script>
- 
-    <!-- Our CSS style sheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
+  <!-- Script -->
 
-  </head>
+  <!-- Our CSS style sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      
 
-    <body>
-    
-    <div class="container">
-      <!-- Div containing our stopwatch controls -->
-  
-      Trivia Quiz Countdown Timer
+</head>
+
+
+
+<body>
+
+  <div class="container">
+    <!-- Div containing our stopwatch controls -->
+
+    Trivia Quiz Countdown Timer
+  </div>
+  <div class="card-block">
+    <div id="countdown">
+      <div class="well">
+
+        <span id="sec" class="timer bg-primary"></span>
+
+
+
+      </div>
+
+      <div id="laps"></div>
+
     </div>
-    <div class="card-block">
-        <div id="countdown">
-            <div class="well">
-               
-                <span id="sec" class="timer bg-primary"></span>
-            
+    <h2>Stuff I Like Trivia Game</h2>
+
+    <form>
+
+      <div class="question" id="one">
+        <p>1. Whose 2013 world concert tour was called ‘The Mrs Carter Show’?</p>
+        <label><input type="radio" name="one" id="a">Jay Z</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="one" value="b">Aaron Carter</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="one" value="c">Beyonce</label>
+      </div>
 
 
-</div>
+      <br>
 
-<div id="laps"></div>
+      <div class="question" id="two">
+        <p>2. Who is Idris Elba?</p>
+        <label><input type="radio" name="two" value="a">The guy who played Mandela</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="two" value="b">The guy who played Stringer in The Wire</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="two" value="c">A British DJ</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="two" value="d">All</label>
+      </div>
+      <br>
 
-</div>
-      <h2>Stuff I Like Trivia Game</h2>
-      
-      <form>
+      <div class="question" id="three">
+        <p>3. Which song from Spiderman: Into the Spiderverse went #1 on Billboard Hot 100?</p>
+        <label><input type="radio" name="three" value="a">Start a Riot</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="three" value="b">What's Up Danger</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="three" value="c">Sunflower</label>
+      </div>
 
-        <div class="question" id="one"><p>Whose 2013 world concert tour was called ‘The Mrs Carter Show’?</p>
-          <label><input type="radio" name="optradio" id="a">Jay Z</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="b">Aaron Carter</label>
-        </div>
-        <div class="radio disabled">
-          <label><input type="radio" name="optradio" id="c">Beyonce</label>
-        </div>
-     
-    
-       <br>
-    
-        <div class="question" id="two"><p>Who is Idris Elba?</p>
-          <label><input type="radio" name="optradio" id="a" >The guy who played Mandela</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="b">The guy who played Stringer in The Wire</label>
-        </div>
-        <div class="radio disabled">
-          <label><input type="radio" name="optradio" id="c">A British DJ</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="d">All</label>
-        </div>
-        <br>
+      <br>
 
-        <div class="question" id="three"><p>Which song from Spiderman: Into the Spiderverse went #1 on Billboard Hot 100?</p>
-          <label><input type="radio" name="optradio"  id="a">Start a Riot</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="b">What's Up Danger</label>
-        </div>
-        <div class="radio disabled">
-          <label><input type="radio" name="optradio" id="c">Sunflower</label>
-        </div>
-       
-        <br>
-    
-        <div class="question" id="four"><p>What was the name of Samuel L. Jackson’s role in Pulp Fiction?</p>
-          <label><input type="radio" name="optradio" id="a">Vincent Vega</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="b">Jules Winnfield</label>
-        </div>
-        <div class="radio disabled">
-          <label><input type="radio" name="optradio" id="c">Quentin Tarantino</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="d">Marcellus Wallace</label>
-        </div>
-        <br>
-        
-       
-    
-        <div class="question" id="five"><p>What is the name of the album that won Kendrick Lamar a Pulitzer?</p>
-          <label><input type="radio" name="optradio"  id="a">Damn</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="b">Humble</label>
-        </div>
-        <div class="radio disabled">
-          <label><input type="radio" name="optradio" id="c">Snake</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="d">DNA</label>
-        </div>
-        <br>
-        <input type="submit" name ="submit" id="submit" />
-      </form>
-    </div>
-    
-    </body>
-    </html>
-   
+      <div class="question" id="four">
+        <p>4. What was the name of Samuel L. Jackson’s role in Pulp Fiction?</p>
+        <label><input type="radio" name="four" value="a">Vincent Vega</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="four" value="b">Jules Winnfield</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="four" value="c">Quentin Tarantino</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="four" value="d">Marcellus Wallace</label>
+      </div>
+      <br>
+
+
+
+      <div class="question" id="five">
+        <p>5. What is the name of the album that won Kendrick Lamar a Pulitzer?</p>
+        <label><input type="radio" name="optrfiveadio" value="a">Damn</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="five" value="b">Humble</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="five" value="c">Snake</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="five" value="d">DNA</label>
+      </div>
+      <br>
+      <input type="submit" name="submit" id="submit" />
+    </form>
+  </div>
+
 </body>
 
 </html>
+
+</body>
+
+</html>
+<script type="text/javascript" src="assets/javascript/app.js"></script>

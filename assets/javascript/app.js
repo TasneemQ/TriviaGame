@@ -22,7 +22,8 @@ function clearAnswers(){
   
   function markIncorrect(el){
     var img = new Image();
-    img.src = '/assets/x-png-23.png';
+    img.src = 'assets/images/x-png-23.png';
+    img.className = 'image';
     img.style.height= "50 px";
     img.style.width= "50 px";
     el.append(img);
@@ -30,7 +31,7 @@ function clearAnswers(){
   
   function markCorrect(el){
     var img = new Image();
-    img.src = '/assets//check-mark-icon.png';
+    img.src = 'assets/images/check-mark-icon.png';
     img.style.height= "50 px";
     img.style.width= "50 px";
     el.append(img);
