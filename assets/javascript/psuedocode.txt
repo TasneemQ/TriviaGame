@@ -1,0 +1,8 @@
+stuff i need
+I need a start button
+the start button will activate a count down timer
+need questions
+need to store the user responses
+need to check the check the user responses against correct ansers
+need a counter that adds one to both correct and incorrect answers
+need to offer to try again = refresh?
