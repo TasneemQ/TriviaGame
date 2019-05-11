@@ -22,20 +22,24 @@ function clearAnswers(){
   
   function markIncorrect(el){
     var img = new Image();
-    img.src = 'xxx';
+    img.src = '/assets/x-png-23.png';
+    img.style.height= "50 px";
+    img.style.width= "50 px";
     el.append(img);
   }
   
   function markCorrect(el){
     var img = new Image();
-    img.src = 'ooo';
+    img.src = '/assets//check-mark-icon.png';
+    img.style.height= "50 px";
+    img.style.width= "50 px";
     el.append(img);
   }
   
   $("form").on("submit", function(e){
     e.preventDefault();
     clearAnswers();
-  
+  console.log("It worked!");
     $questions = $(".question");
     $questions.each(function(){
       var answer = $(this).find("input:checked"),
@@ -52,9 +56,12 @@ function clearAnswers(){
     });
   });
   
-  var answers = {
-    "one": "a",
-    "two": "c"
-    "three": "",
-    "two": "c"
-  }
+  var answers = [
+    one, "c",
+    two, "d",
+    three, "c",
+    four, "b",
+    five, "a"
+  ]
+}
+)

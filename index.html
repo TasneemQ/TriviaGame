@@ -6,65 +6,48 @@
 
     <meta charset="UTF-8">
     <title>Trivia Game</title>
-    <link href="..//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="..//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="..//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <!-- Script -->
+     <script type="text/javascript" src="assets/javascript/app.js"></script>
+ 
     <!-- Our CSS style sheet -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
 
   </head>
 
-      <!-- Div containing our stopwatch controls -->
-      <div class="container">
-        <section id="timer">
-            <div class="row">
-                
-                <div class="col-xs-12 col-sm-12 col-md-6 countdown-wrapper text-center mb20">
-                    <div class="card">
-                        <div class="card-header">
-                            Trivia Quiz Countdown Timer
-                        </div>
-                        <div class="card-block">
-                            <div id="countdown">
-                                <div class="well">
-                                   
-                                    <span id="sec" class="timer bg-primary"></span>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
       
-        
-     
-      </div>
 
-      <div id="laps"></div>
-
-    </div>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>Bootstrap Example</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
     <body>
     
     <div class="container">
+      <!-- Div containing our stopwatch controls -->
+  
+      Trivia Quiz Countdown Timer
+    </div>
+    <div class="card-block">
+        <div id="countdown">
+            <div class="well">
+               
+                <span id="sec" class="timer bg-primary"></span>
+            
+
+
+</div>
+
+<div id="laps"></div>
+
+</div>
       <h2>Stuff I Like Trivia Game</h2>
       
       <form>
 
-        <div class="radio" id="one"><p>Whose 2013 world concert tour was called ‘The Mrs Carter Show’?</p>
+        <div class="question" id="one"><p>Whose 2013 world concert tour was called ‘The Mrs Carter Show’?</p>
           <label><input type="radio" name="optradio" id="a">Jay Z</label>
         </div>
         <div class="radio">
@@ -77,7 +60,7 @@
     
        <br>
     
-        <div class="radio" id="two"><p>Who is Idris Elba?</p>
+        <div class="question" id="two"><p>Who is Idris Elba?</p>
           <label><input type="radio" name="optradio" id="a" >The guy who played Mandela</label>
         </div>
         <div class="radio">
@@ -90,7 +73,8 @@
           <label><input type="radio" name="optradio" id="d">All</label>
         </div>
         <br>
-           <div class="radio" id="three"><p>Which song from Spiderman: Into the Spiderverse went #1 on Billboard Hot 100?</p>
+
+        <div class="question" id="three"><p>Which song from Spiderman: Into the Spiderverse went #1 on Billboard Hot 100?</p>
           <label><input type="radio" name="optradio"  id="a">Start a Riot</label>
         </div>
         <div class="radio">
@@ -102,7 +86,7 @@
        
         <br>
     
-        <div class="radio" id="three"><p>What was the name of Samuel L. Jackson’s role in Pulp Fiction?</p>
+        <div class="question" id="four"><p>What was the name of Samuel L. Jackson’s role in Pulp Fiction?</p>
           <label><input type="radio" name="optradio" id="a">Vincent Vega</label>
         </div>
         <div class="radio">
@@ -118,7 +102,7 @@
         
        
     
-        <div class="radio" id="five"><p>What is the name of the album that won Kendrick Lamar a Pulitzer?</p>
+        <div class="question" id="five"><p>What is the name of the album that won Kendrick Lamar a Pulitzer?</p>
           <label><input type="radio" name="optradio"  id="a">Damn</label>
         </div>
         <div class="radio">
@@ -131,18 +115,13 @@
           <label><input type="radio" name="optradio" id="d">DNA</label>
         </div>
         <br>
-        <input type="submit" />
+        <input type="submit" name ="submit" id="submit" />
       </form>
     </div>
     
     </body>
     </html>
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Script -->
-    <script type="text/javascript" src="/assets/javascript/app.js"></script>
-
-  </body>
+   
+</body>
 
 </html>
